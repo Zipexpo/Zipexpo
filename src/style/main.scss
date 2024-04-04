@@ -35,8 +35,33 @@ body {
         margin-left:80px;
         transform: translate(0px,-50%) rotate(180deg);
         transform-origin: -80px 50%;
-        font-size: 4rem;
+        font-size: 3rem;
         text-align: left;
         background-color: rgb(4, 1, 86);
+    }
+}
+#hero {
+    background-color: rgb(224, 224, 224);
+    padding: 0;
+    #avartarLarge {
+        position: absolute;
+        top:0;
+        left:0;
+        height: 100vh;
+
+        div {
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+        }
+    }
+    .myname {
+        position: absolute;
+        top:0;
+        right:0;
+        padding: 4rem;
+        margin: 0;
+        text-align: right;
+        font-size: 4rem;
+        font-weight: 900;
     }
 }
