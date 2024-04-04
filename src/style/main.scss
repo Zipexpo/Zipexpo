@@ -6,6 +6,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
     overflow-y: scroll;
+    background-color: #fff;
 }
 
 .panel {
@@ -28,6 +29,7 @@ body {
     height: 100vh;
     color: #ffffff;
     overflow: hidden;
+    z-index: 2;
     .listOption {
         position: absolute;
         top:50%;
@@ -52,6 +54,10 @@ body {
         div {
             background-size: auto 100%;
             background-repeat: no-repeat;
+            z-index: 1;
+        }
+        .backgoundavatar{
+            position: absolute;
         }
     }
     .myname {
@@ -63,5 +69,40 @@ body {
         text-align: right;
         font-size: 4rem;
         font-weight: 900;
+    }
+}
+
+#sociallink {
+    position: fixed;
+    top:50%;
+    left:0;
+    background-color: black;
+    clip-path: polygon(0% 0%, 4% 12%, 100% 20%, 100% 80%, 5% 88%,0% 100%);
+    display: flex;
+    flex-direction: column;
+    padding:2.5rem 0.5rem;
+}
+
+.socialicon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 5px 2px;
+    img {
+        width: 1.5rem;
+        height: 1.5rem;  
+    }
+    svg {
+        fill:white;
+        width: 1.5rem;
+        height: 1.5rem;  
+    }
+}
+
+.transition.background {
+    position: absolute;
+    top:0;
+    left:0;
+    path {
+        fill: rgb(68, 0, 163);
     }
 }

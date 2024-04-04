@@ -23,15 +23,26 @@ const sequence = hero.addLabel("start")
     .to(terms[0], { rotation: 540 });
 const nterms = terms.length;
 for (let i=1;i<nterms-1;i++){
-    sequence
-    .to(terms[i], { rotation: 360 ,ease: "power1.in"})
-    .addLabel("term_in"+i)
-    .to(terms[i], { rotation: 540 });
+  sequence
+  .to(terms[i], { rotation: 360 ,ease: "power1.in"})
+  .addLabel("term_in"+i)
+  .to(terms[i], { rotation: 540 });
 }
 sequence
-    .to(terms[nterms-1], { rotation: 360 ,ease: "power1.in"})
-    .addLabel("end");
+  .to(terms[nterms-1], { rotation: 360 ,ease: "power1.in"})
+  .addLabel("end");
 
+//   
+let $path = document.querySelector(".path");
+const start = "M 0 100 V 50 Q 50 0 100 50 V 100 z";
+const end = "M 0 100 V 0 Q 50 0 100 0 V 100 z";
+var research = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#research",
+    toggleActions: "restart pause resume pause"
+  }
+}).to($path, 0.8, {attr: { d: start }, ease: Power2.easeIn})
+.to($path, 0.4, {attr: { d: end }, ease: Power2.easeOut})
 // // smooth scroll
 // const lenis = new Lenis()
 
