@@ -1,108 +1,109 @@
 html {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: #fff;
 }
 
 .panel {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    font-size: 1.5em;
-    text-align: center;
-    position: relative;
-    box-sizing: border-box;
-    padding: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px;
+  will-change: transform;
 }
 
 .gallery {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  color: #ffffff;
+  overflow: hidden;
+  z-index: 2;
+  .listOption {
     position: absolute;
-    width: 100%;
-    height: 100vh;
-    color: #ffffff;
-    overflow: hidden;
-    z-index: 2;
-    .listOption {
-        position: absolute;
-        top:50%;
-        left:0;
-        margin-left:80px;
-        transform: translate(0px,-50%) rotate(180deg);
-        transform-origin: -80px 50%;
-        font-size: 3rem;
-        text-align: left;
-        background-color: rgb(4, 1, 86);
-    }
+    top: 50%;
+    left: 0;
+    margin-left: 80px;
+    transform: translate(0px, -50%) rotate(180deg);
+    transform-origin: -80px 50%;
+    font-size: 3rem;
+    text-align: left;
+    background-color: rgb(4, 1, 86);
+  }
 }
 #hero {
-    background-color: rgb(224, 224, 224);
-    padding: 0;
-    #avartarLarge {
-        position: absolute;
-        top:0;
-        left:0;
-        height: 100vh;
+  background-color: rgb(224, 224, 224);
+  padding: 0;
+  #avartarLarge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
 
-        div {
-            background-size: auto 100%;
-            background-repeat: no-repeat;
-            z-index: 1;
-        }
-        .backgoundavatar{
-            position: absolute;
-        }
+    div {
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      z-index: 1;
     }
-    .myname {
-        position: absolute;
-        top:0;
-        right:0;
-        padding: 4rem;
-        margin: 0;
-        text-align: right;
-        font-size: 4rem;
-        font-weight: 900;
+    .backgoundavatar {
+      position: absolute;
     }
+  }
+  .myname {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4rem;
+    margin: 0;
+    text-align: right;
+    font-size: 4rem;
+    font-weight: 900;
+  }
 }
 
 #sociallink {
-    position: fixed;
-    top:50%;
-    left:0;
-    background-color: black;
-    clip-path: polygon(0% 0%, 4% 12%, 100% 20%, 100% 80%, 5% 88%,0% 100%);
-    display: flex;
-    flex-direction: column;
-    padding:2.5rem 0.5rem;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  background-color: black;
+  clip-path: polygon(0% 0%, 4% 12%, 100% 20%, 100% 80%, 5% 88%, 0% 100%);
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 0.5rem;
 }
 
 .socialicon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 5px 2px;
+  img {
     width: 1.5rem;
     height: 1.5rem;
-    margin: 5px 2px;
-    img {
-        width: 1.5rem;
-        height: 1.5rem;  
-    }
-    svg {
-        fill:white;
-        width: 1.5rem;
-        height: 1.5rem;  
-    }
+  }
+  svg {
+    fill: white;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 
 .transition.background {
-    position: absolute;
-    top:0;
-    left:0;
-    path {
-        fill: rgb(68, 0, 163);
-    }
+  position: absolute;
+  top: 0;
+  left: 0;
+  path {
+    fill: rgb(68, 0, 163);
+  }
 }
