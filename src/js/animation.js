@@ -32,7 +32,7 @@ sequence
   .addLabel("end");
 
 //
-let $path = document.querySelector(".path");
+let $path = document.querySelector("#backgroundsvg1 .path");
 const start = "M 0 100 V 50 Q 50 0 100 50 V 100 z";
 const end = "M 0 100 V 0 Q 50 0 100 0 V 100 z";
 var research = gsap
