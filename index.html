@@ -118,26 +118,41 @@
 
     </section>
     <section id="education" class="panel">
-        <div>
-            <svg id="timeline_svg" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 600 1200">
-                <path class="line01 line" d="M 10 200  600 200" ></path>
+        <div class="w-full h-full">
+            <svg id="timeline_svg" class="max-w-screen-sm overflow-visible mx-auto" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 600 1200">
+              <defs>
+                <linearGradient id="linear" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#4400a3"/>
+                <stop offset="100%" stop-color="#0a5"/>
+                </linearGradient>
+                </defs>  
+              <path class="line01 line" d="M 10 200  600 200" ></path>
                 <path class="line02 line" d="M 10 400  600 400" ></path>
                 <path class="line03 line" d="M 10 600  600 600" ></path>
                 <path class="line04 line" d="M 10 800  600 800" ></path>
                 <path class="line05 line" d="M 10 1000  600 1000" ></path>
-                <text class="text01" x="30" y="190">2018</text>
-                <text class="text02" x="30" y="390">2019</text>
-                <text class="text03" x="30" y="590">2020</text>
-              
+                <text class="text01" x="30" y="190">2014
+                  <tspan x="30" y="220" font-size="small">BSc. Physics</tspan>
+                </text>
+                <text class="text" x="320" y="190">University of Sciences<tspan x="320" y="220">VNU-HCM</tspan></text>
+                <text class="text02" x="30" y="390">2019
+                  <tspan x="30" y="420" font-size="small">MSc. Physics</tspan>
+                </text>
+                <text class="text" x="370" y="390">University of Sciences<tspan x="370" y="420">VNU-HCM</tspan></text>
+                <text class="text03" x="30" y="590">2023
+                  <tspan x="30" y="620" font-size="small">MSc. Computer Science</tspan>
+                </text>
+                <text class="text" x="320" y="590">Texas Yech University</text>
                 <path class="theLine" 
                       d="M -5,0
                          Q 450 230 300 450 
                          T 130 750
                          Q 100 850 300 1000
                          T 150 1200"
-                      fill="none" stroke="white" stroke-width="10px" />
+                      fill="none" stroke="url(#linear)" stroke-width="10px" />
                 
-                
+                <text class="text04" x="30" y="790">2026
+                </text>
                 
                 <circle class="ball ball01" r="20" cx="50" cy="100"></circle>
                 <circle class="ball ball02" r="20" cx="278" cy="201"></circle>
@@ -188,6 +203,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="src/js/gsap.min.js"></script>
+    <script src="src/js/MotionPathPlugin.min.js"></script>
     <script src="src/js/ScrollTrigger.min.js"></script>
     <script src="src/js/Draggable.min.js"></script>
     <script src="src/js/lenis.min.js"></script>

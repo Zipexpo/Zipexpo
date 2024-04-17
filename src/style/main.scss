@@ -104,6 +104,17 @@ body {
   top: 0;
   left: 0;
   path {
-    fill: rgb(68, 0, 163);
+    fill: #4400a3;
+  }
+}
+
+#timeline_svg {
+  .line {
+    stroke:rgb(198, 198, 198);
+    stroke-width: 5;
+  }
+  .ball {
+    fill: white;
+    stroke:rgb(4, 1, 86)
   }
 }
